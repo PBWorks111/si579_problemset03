@@ -9,35 +9,43 @@
 * Then write a function that changes the text and the color inside the div
 *
 */
-// document.getElementById('color-block'). addEventListener("click", (changeColor));
+const colorBox = document.getElementById('color-block');
+const colorName = document.getElementById('color-name');
+colorBox.addEventListener('click', (changeColor));
 
 
-// function changeColor(){
-    
-    
+
+
+
+function changeColor(){
 
 //     //Write a condition determine what color it should be changed to
-    
-    // if(){
+    if(colorBox.style.backgroundColor != 'red'){
 
+        colorName.innerHTML = 'red';
+        colorBox.style.backgroundColor = 'red';
         
-        
-    //     }
-  
-// //         //change the background color using JS
-// //         //Change the text of the color using the span id color-name
-
-//     }
+}
     
-//     else{ 
+    else if (colorBox.style.backgroundColor != '#F08080'){
        
-// //         //change the background color using JS
+        colorBox.addEventListener('click', (test));
+
+        function test (){
+        colorName.innerHTML = '#F08080';
+        colorBox.style.backgroundColor = '#F08080';
+        }
+    }
+
+}
+    //   
+    //     //change the background color using JS
         
-// //         //Change the text of the color using the span id color-name
+    //     //Change the text of the color using the span id color-name
 
 
     
-// }
+
 
 
 /*
@@ -65,8 +73,8 @@ function convertTemp(){
    
     document.getElementById('c-output').innerHTML= temperatureConversion;
     
-    //Calculate the temperature here
+//     //Calculate the temperature here
 
-    //Send the calculated temperature to HTML
+//     //Send the calculated temperature to HTML
 
-};
+}
