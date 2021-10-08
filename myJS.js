@@ -27,7 +27,7 @@ function changeColor(){
         
 }
     
-    else if (colorBox.style.backgroundColor != '#F08080'){
+    else{
        
         colorBox.addEventListener('click', (test));
 
